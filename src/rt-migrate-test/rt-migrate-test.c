@@ -497,14 +497,14 @@ static void stop_log(int sig)
 static int count_cpus(void)
 {
 	FILE *fp;
-	char buf[1024];
+	char buf[2048];
 	int cpus = 0;
 	char *pbuf;
 	size_t *pn;
 	size_t n;
 	int r;
 
-	n = 1024;
+	n = 2048;
 	pn = &n;
 	pbuf = buf;
 
